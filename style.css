@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+body{
+    background-color: #fec519;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    margin: auto;
+    max-width: 120rem;
+    font-family: 'Poppins', sans-serif;
+    
+
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+.nav{
+    width: 1100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 60%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+.nav .logo{
+    width: 170px;
+}
+.nav .logo img{
+    width: 100%;
+    right: 50%;
+}
+.nav .menu{
+    width: 40%;
+}
+.nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.nav  .menu ul li{
+    list-style: none;
+}
+.nav  .menu ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.nav .menu .active{
+    color: red;
+}
+.banner{
+    background: url(img.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: flex-end; */
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.banner .banner_text{
+    width: 50%;
+}
+.banner_text h1{
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1rem;
+    margin-top: 182px;
+    background-size: cover;
+    background-position: bottom;
+    margin-left: 500px;
+}
+.banner_text p{
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 510px;
+}
+.banner_text button{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+    background-color: #fec519;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 510px;
+}
+.Satyajeet{
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    color: black;
+    transform: rotate(90deg);
+    font-weight: bold;
+}
+/* -------------------About-------------------- */
+.row .About-col-2 h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-left: -8px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.sub-title p {
+    text-align: justify;
+    margin-right: 10px;
+    color: black;
+}
+
+#About {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.About-col-1 img {
+    width: 80%;
+    margin-left: -1%;
+    border-radius: 15px;
+}
+
+.About-col-2 {
+    flex-basis: 35%;
+}
+
+.About-col-1 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links ::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    ;
+}
+
+.tab-contents ul li span {
+    color: red;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+/* -------------------Our fruits-------------------- */
+#services {
+    padding: 30px 0;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    margin-left: 100px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+    margin-top: 40px;
+    color: black;
+    text-align: center;
+}
+.services-list img{
+    width: 80%;
+}
+.services-list p{
+    font-weight: 800;
+}
+
+.container {
+    margin-left: 10px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.container h1{
+    color: black;
+    margin-top: 10px;
+    padding-top: 100px;
+    margin-left: 490px;
+}
+.sub-title h1{
+    color: yellow;
+}
+.services-list div {
+    background: #fff;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fec519;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background-color: white;
+    transform: translateY(-10px);
+}
+.copyright{
+    color: black;
+    margin-left: 38rem;
+}
+
+.pp{
+    color: black;
+}
